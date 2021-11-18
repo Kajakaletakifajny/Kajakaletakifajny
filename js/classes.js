@@ -12,9 +12,12 @@ class Phone
 }
 
 let komora = new Phone;
-komora.sendSms("Nie ide jutro do szkoly");
 
+let text = prompt("Podaj treść smsa");
+komora.sendSms(text);
+/*
 document.write(komora.sms);
 alert("Model telefonu: " + komora.brand);
 alert("Cena telefonu: " + komora.price);
 alert("Kolor telefonu: " + komora.color);
+*/
