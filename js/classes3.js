@@ -1,14 +1,28 @@
 class student {
-    private PESEL = "";
-    private name ='';
-    private surname = "";
 
-    public getPESEL(){
-        getPESEL=this.PESEL;
-        return getCena;
+    #name ='Piotr';
+    #surname = "Bak";
+    #PESEL = "1111111111";
+
+    constructor(name, surname, PESEL) {
+        this.#name=name;
+        this.#surname=surname;
+        this.#PESEL=PESEL;
     }
-    public getName(){
-        getName=this.name;
-        return GetName;
+
+    getName = function(){
+        return this.#name;
+    }
+
+    getSurname(){
+        return this.#surname;
+    }
+
+    #getPESEL(){
+        return this.#PESEL;
+    }
+
+    display(){
+        document.write();
     }
 }
