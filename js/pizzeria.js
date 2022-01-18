@@ -16,7 +16,7 @@ class Pizza
     }
 
 }
-let pizza = new Pizza(); //new bo pizza to nowy obiekt klasy Pizza
+let pizza = new Pizza(); //new bo pizza to nowy obiekt klasy Pizza; new Pizza() jest to konstruktor
 
 //ceny składników wiem że bardzo ale to bardzo niezoptymalizowane
 cenaciastaisosu = 7;
