@@ -90,7 +90,7 @@ class PriceGameTypeFactory
         } else if (type === "aaaprice") {
             priceType = new AAAPrice();
         }
-        priceType.display = function()
+        priceType.display = function()//nietypowa deklaracja funkcji wewnątzr funkcji, tylko taki sposób deklaracji
         {
             return document.write(`${this.BrandManager} is responsible for ${this.Name} (the suggested price is ${this.Price})`);
         }
@@ -113,8 +113,8 @@ function GamesFactory()
 
     for (let i = 0; i < games.length; i++)
     {
-        games[i].display();
-        document.write("<br>");
+        games[i].display();//tu jest pies pogrzebany, używamy tutaj jednej funkcji klasy PriceGameTypeFactory do obiektów różnych klas(polimorfizm)
+        document.write("<br>");//poliformem jest display bo dostosuje się do innych
     }
 }
 GamesFactory();
