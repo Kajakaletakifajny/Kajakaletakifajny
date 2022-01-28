@@ -46,9 +46,9 @@ document.write(games());
 */
 
 class MidPrice{
-    name = 'mid';
-    price = 50;
-    brandManager = 'Maciej Nowak';
+    name = 'mid';//atrybuty
+    price = 50;//atrybuty
+    brandManager = 'Maciej Nowak';//atrybuty
     display = function(){
         return document.write(`<br>osoba odpowiedzialna za segment ${this.name} to ${this.brandManager} (cena sugerowana to: ${this.price})`);
     }
